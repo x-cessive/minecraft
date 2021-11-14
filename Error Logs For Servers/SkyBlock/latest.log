@@ -1,0 +1,579 @@
+[12:38:38] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[12:38:39] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[12:38:41] [Worker-Main-6/INFO]: Loaded 7 recipes
+[12:38:47] [Server thread/INFO]: Starting minecraft server version 1.17.1
+[12:38:47] [Server thread/WARN]: ****************************
+[12:38:47] [Server thread/WARN]: YOU ARE RUNNING THIS SERVER AS AN ADMINISTRATIVE OR ROOT USER. THIS IS NOT ADVISED.
+[12:38:47] [Server thread/WARN]: YOU ARE OPENING YOURSELF UP TO POTENTIAL RISKS WHEN DOING THIS.
+[12:38:47] [Server thread/WARN]: FOR MORE INFORMATION, SEE https://madelinemiller.dev/blog/root-minecraft-server/
+[12:38:47] [Server thread/WARN]: ****************************
+[12:38:47] [Server thread/INFO]: Loading properties
+[12:38:48] [Server thread/INFO]: This server is running Paper version git-Paper-327 (MC: 1.17.1) (Implementing API version 1.17.1-R0.1-SNAPSHOT) (Git: 8575248)
+[12:38:48] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[12:38:48] [Server thread/INFO]: Using 4 threads for Netty based IO
+[12:38:48] [Server thread/INFO]: Default game type: SURVIVAL
+[12:38:48] [Server thread/INFO]: Generating keypair
+[12:38:48] [Server thread/INFO]: Starting Minecraft server on *:25568
+[12:38:49] [Server thread/INFO]: Using default channel type
+[12:38:49] [Server thread/INFO]: Paper: Using Java 11 compression from Velocity.
+[12:38:49] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[12:38:49] [Server thread/ERROR]: Could not load 'plugins\Anti-Gravity-Mod-1.7.10.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidDescriptionException: Invalid plugin.yml
+	at org.bukkit.plugin.java.JavaPluginLoader.getPluginDescription(JavaPluginLoader.java:178) ~[patched_1.17.1.jar:git-Paper-327]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:160) ~[patched_1.17.1.jar:git-Paper-327]
+	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.loadPlugins(CraftServer.java:419) ~[patched_1.17.1.jar:git-Paper-327]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:287) ~[patched_1.17.1.jar:git-Paper-327]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1212) ~[patched_1.17.1.jar:git-Paper-327]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[patched_1.17.1.jar:git-Paper-327]
+	at java.lang.Thread.run(Thread.java:831) ~[?:?]
+Caused by: java.io.FileNotFoundException: Jar does not contain plugin.yml
+	... 7 more
+[12:38:50] [Server thread/ERROR]: Could not load 'plugins\advancedregionmarket-3.3.5.jar' in folder 'plugins'
+org.bukkit.plugin.UnknownDependencyException: Unknown/missing dependency plugins: [WorldEdit]. Please download and install these plugins to run 'AdvancedRegionMarket'.
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:292) ~[patched_1.17.1.jar:git-Paper-327]
+	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.loadPlugins(CraftServer.java:419) ~[patched_1.17.1.jar:git-Paper-327]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:287) ~[patched_1.17.1.jar:git-Paper-327]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1212) ~[patched_1.17.1.jar:git-Paper-327]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[patched_1.17.1.jar:git-Paper-327]
+	at java.lang.Thread.run(Thread.java:831) ~[?:?]
+[12:38:51] [Server thread/ERROR]: [STDERR] [org.bukkit.craftbukkit.v1_17_R1.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[12:39:02] [Server thread/WARN]: Legacy plugin NoMobGrief v1.0.0 does not specify an api-version.
+[12:39:02] [Server thread/WARN]: Legacy plugin FarmProtect v1.9.0 does not specify an api-version.
+[12:39:02] [Server thread/ERROR]: Could not load 'plugins\worldguard-bukkit-7.0.5-dist.jar' in folder 'plugins'
+org.bukkit.plugin.UnknownDependencyException: Unknown/missing dependency plugins: [WorldEdit]. Please download and install these plugins to run 'WorldGuard'.
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:292) ~[patched_1.17.1.jar:git-Paper-327]
+	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.loadPlugins(CraftServer.java:419) ~[patched_1.17.1.jar:git-Paper-327]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:287) ~[patched_1.17.1.jar:git-Paper-327]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1212) ~[patched_1.17.1.jar:git-Paper-327]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[patched_1.17.1.jar:git-Paper-327]
+	at java.lang.Thread.run(Thread.java:831) ~[?:?]
+[12:39:02] [Server thread/WARN]: Legacy plugin BungeeTabListPlus v3.4.4 does not specify an api-version.
+[12:39:02] [Server thread/ERROR]: Could not load 'plugins\BungeeTabListPlus-3.4.4.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.NoClassDefFoundError: net/md_5/bungee/api/plugin/Plugin
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:157) ~[patched_1.17.1.jar:git-Paper-327]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:416) ~[patched_1.17.1.jar:git-Paper-327]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:324) ~[patched_1.17.1.jar:git-Paper-327]
+	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.loadPlugins(CraftServer.java:419) ~[patched_1.17.1.jar:git-Paper-327]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:287) ~[patched_1.17.1.jar:git-Paper-327]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1212) ~[patched_1.17.1.jar:git-Paper-327]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[patched_1.17.1.jar:git-Paper-327]
+	at java.lang.Thread.run(Thread.java:831) ~[?:?]
+Caused by: java.lang.NoClassDefFoundError: net/md_5/bungee/api/plugin/Plugin
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:1010) ~[?:?]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:192) ~[patched_1.17.1.jar:git-Paper-327]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:586) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:108) ~[patched_1.17.1.jar:git-Paper-327]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:103) ~[patched_1.17.1.jar:git-Paper-327]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:519) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:466) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:71) ~[patched_1.17.1.jar:git-Paper-327]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:153) ~[patched_1.17.1.jar:git-Paper-327]
+	... 7 more
+Caused by: java.lang.ClassNotFoundException: net.md_5.bungee.api.plugin.Plugin
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:146) ~[patched_1.17.1.jar:git-Paper-327]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:103) ~[patched_1.17.1.jar:git-Paper-327]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:519) ~[?:?]
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:1010) ~[?:?]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:192) ~[patched_1.17.1.jar:git-Paper-327]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:586) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:108) ~[patched_1.17.1.jar:git-Paper-327]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:103) ~[patched_1.17.1.jar:git-Paper-327]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:519) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:466) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:71) ~[patched_1.17.1.jar:git-Paper-327]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:153) ~[patched_1.17.1.jar:git-Paper-327]
+	... 7 more
+[12:39:02] [Server thread/WARN]: Legacy plugin BungeeOnlineTime v7.0 does not specify an api-version.
+[12:39:02] [Server thread/ERROR]: Could not load 'plugins\BungeeOnlineTime-7.0.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.NoClassDefFoundError: net/md_5/bungee/api/plugin/Plugin
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:157) ~[patched_1.17.1.jar:git-Paper-327]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:416) ~[patched_1.17.1.jar:git-Paper-327]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:324) ~[patched_1.17.1.jar:git-Paper-327]
+	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.loadPlugins(CraftServer.java:419) ~[patched_1.17.1.jar:git-Paper-327]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:287) ~[patched_1.17.1.jar:git-Paper-327]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1212) ~[patched_1.17.1.jar:git-Paper-327]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[patched_1.17.1.jar:git-Paper-327]
+	at java.lang.Thread.run(Thread.java:831) ~[?:?]
+Caused by: java.lang.NoClassDefFoundError: net/md_5/bungee/api/plugin/Plugin
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:1010) ~[?:?]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:192) ~[patched_1.17.1.jar:git-Paper-327]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:586) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:108) ~[patched_1.17.1.jar:git-Paper-327]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:103) ~[patched_1.17.1.jar:git-Paper-327]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:519) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:466) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:71) ~[patched_1.17.1.jar:git-Paper-327]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:153) ~[patched_1.17.1.jar:git-Paper-327]
+	... 7 more
+Caused by: java.lang.ClassNotFoundException: net.md_5.bungee.api.plugin.Plugin
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:146) ~[patched_1.17.1.jar:git-Paper-327]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:103) ~[patched_1.17.1.jar:git-Paper-327]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:519) ~[?:?]
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:1010) ~[?:?]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:192) ~[patched_1.17.1.jar:git-Paper-327]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:586) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:108) ~[patched_1.17.1.jar:git-Paper-327]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:103) ~[patched_1.17.1.jar:git-Paper-327]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:519) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:466) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:71) ~[patched_1.17.1.jar:git-Paper-327]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:153) ~[patched_1.17.1.jar:git-Paper-327]
+	... 7 more
+[12:39:03] [Server thread/WARN]: Legacy plugin ServerNPC v1.0.9 does not specify an api-version.
+[12:39:03] [Server thread/INFO]: [PlaceholderAPI] Loading PlaceholderAPI v2.10.10
+[12:39:03] [Server thread/INFO]: [PlugMan] Loading PlugMan v2.1.7
+[12:39:03] [Server thread/INFO]: [NoMobGrief] Loading NoMobGrief v1.0.0
+[12:39:03] [Server thread/INFO]: [FarmProtect] Loading FarmProtect v1.9.0
+[12:39:03] [Server thread/INFO]: [ChestSort] Loading ChestSort v12.0.2
+[12:39:03] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v4.0.1
+[12:39:03] [Server thread/INFO]: [ViaVersion] ViaVersion 4.0.1 is now loaded, injecting!
+[12:39:04] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading 1.12 -> 1.13 mappings...
+[12:39:04] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading 1.13 -> 1.13.2 mappings...
+[12:39:04] [Via-Mappingloader-2/INFO]: [ViaVersion] Loading 1.13.2 -> 1.14 mappings...
+[12:39:04] [Via-Mappingloader-3/INFO]: [ViaVersion] Loading 1.14 -> 1.15 mappings...
+[12:39:04] [Via-Mappingloader-4/INFO]: [ViaVersion] Loading 1.15 -> 1.16 mappings...
+[12:39:04] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[12:39:04] [Via-Mappingloader-4/INFO]: [ViaVersion] Loading 1.16 -> 1.16.2 mappings...
+[12:39:05] [Via-Mappingloader-4/INFO]: [ViaVersion] Loading 1.16.2 -> 1.17 mappings...
+[12:39:05] [Server thread/INFO]: [LightAPI] Loading LightAPI v3.5.2
+[12:39:05] [Server thread/INFO]: [CoreProtect] Loading CoreProtect v20.1
+[12:39:05] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.3.47
+[12:39:06] [Server thread/INFO]: [LastLog] Loading LastLog v1.2.0
+[12:39:06] [Server thread/INFO]: [PCGF_PluginLib] Loading PCGF_PluginLib v1.0.33-SNAPSHOT-T20211006173713
+[12:39:12] [Server thread/INFO]: [ClearLag] Loading ClearLag v3.2.2
+[12:39:12] [Server thread/INFO]: [ConditionalEvents] Loading ConditionalEvents v3.11.1
+[12:39:12] [Server thread/INFO]: [ProtocolLib] Loading ProtocolLib v4.7.1-SNAPSHOT-b536
+[12:39:14] [Server thread/INFO]: [ChestCleaner] Loading ChestCleaner v2.3.2
+[12:39:14] [Server thread/INFO]: [lJumpPads] Loading lJumpPads v1.0
+[12:39:14] [Server thread/INFO]: [BedRegen] Loading BedRegen v1.1.0
+[12:39:14] [Server thread/INFO]: [Vault] Loading Vault v1.7.3-b131
+[12:39:14] [Server thread/INFO]: [Wailat] Loading Wailat v1.0.5
+[12:39:14] [Server thread/INFO]: [UltimateKits] Loading UltimateKits v0.1
+[12:39:14] [Server thread/INFO]: [ChestShop] Loading ChestShop v3.5.9
+[12:39:14] [Server thread/INFO]: [HolographicDisplays] Loading HolographicDisplays v2.4.9
+[12:39:14] [Server thread/INFO]: [MysqlInventoryBridge] Loading MysqlInventoryBridge v2.4.1
+[12:39:14] [Server thread/INFO]: [AuctionHouse] Loading AuctionHouse v3.0.2
+[12:39:14] [Server thread/INFO]: [dynmap] Loading dynmap v3.2.1-531
+[12:39:14] [Server thread/INFO]: [dynmap] version=git-Paper-327 (MC: 1.17.1)
+[12:39:14] [Server thread/INFO]: [dynmap] Mod Support API available
+[12:39:14] [Server thread/INFO]: [Essentials] Loading Essentials v2.19.0
+[12:39:14] [Server thread/INFO]: [VeinMiner] Loading VeinMiner v1.17.9
+[12:39:14] [Server thread/INFO]: [EvenMoreFish] Loading EvenMoreFish v1.4.0.10
+[12:39:14] [Server thread/INFO]: [Citizens] Loading Citizens v2.0.28-SNAPSHOT (build 2395)
+[12:39:14] [Server thread/INFO]: [DeluxeMenus] Loading DeluxeMenus v1.13.3-Release
+[12:39:14] [Server thread/INFO]: [EssentialsChat] Loading EssentialsChat v2.19.0
+[12:39:14] [Server thread/INFO]: [StackMob] Loading StackMob v5.7.1
+[12:39:14] [Server thread/INFO]: [Chunky] Loading Chunky v1.2.86
+[12:39:14] [Server thread/INFO]: [EssentialsProtect] Loading EssentialsProtect v2.19.0
+[12:39:14] [Server thread/INFO]: [EssentialsGeoIP] Loading EssentialsGeoIP v2.19.0
+[12:39:14] [Server thread/INFO]: [CitizensGUI] Loading CitizensGUI v1.11
+[12:39:14] [Server thread/INFO]: [EssentialsSpawn] Loading EssentialsSpawn v2.19.0
+[12:39:14] [Server thread/INFO]: [EssentialsDiscord] Loading EssentialsDiscord v2.19.0
+[12:39:14] [Server thread/INFO]: [ServerNPC] Loading ServerNPC v1.0.9
+[12:39:14] [Server thread/INFO]: [IridiumSkyblock] Loading IridiumSkyblock v3.1.2
+[12:39:16] [Server thread/INFO]: [Multiverse-Core] Loading Multiverse-Core v4.3.1-b861
+[12:39:16] [Server thread/INFO]: [IPortal] Loading IPortal v1.13
+[12:39:16] [Server thread/INFO]: [GriefPrevention] Loading GriefPrevention v16.17.1-2b69191
+[12:39:16] [Server thread/INFO]: [Multiverse-Inventories] Loading Multiverse-Inventories v4.2.2-b500
+[12:39:16] [Server thread/INFO]: [ProtectionLib] Loading ProtectionLib v1.4
+[12:39:16] [Server thread/INFO]: [SmoothTimber] Loading SmoothTimber v1.17.8
+[12:39:16] [Server thread/INFO]: [FurnitureLib] Loading FurnitureLib v2.5.4.1
+[12:39:16] [Server thread/INFO]: [DiceFurniture] Loading DiceFurniture v3.5.0
+[12:39:16] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[12:39:16] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.3.47
+[12:39:17] [Server thread/INFO]:         __    
+[12:39:17] [Server thread/INFO]:   |    |__)   LuckPerms v5.3.47
+[12:39:17] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[12:39:17] [Server thread/INFO]: 
+[12:39:17] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[12:39:18] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[12:39:19] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[12:39:20] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[12:39:20] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 4312ms)
+[12:39:20] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v4.7.1-SNAPSHOT-b536
+[12:39:20] [Server thread/INFO]: [ProtocolLib] Started structure compiler thread.
+[12:39:20] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[12:39:20] [Server thread/WARN]: [Vault] Loaded class com.earth2me.essentials.api.Economy from Essentials v2.19.0 which is not a depend, softdepend or loadbefore of this plugin.
+[12:39:20] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[12:39:20] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[12:39:20] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[12:39:20] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[12:39:20] [Server thread/INFO]: [ChestShop] Enabling ChestShop v3.5.9
+[12:39:20] [Server thread/INFO]: [MysqlInventoryBridge] Enabling MysqlInventoryBridge v2.4.1
+[12:39:20] [Server thread/INFO]: [MysqlInventoryBridge] Loading the config file...
+[12:39:20] [Server thread/INFO]: [MysqlInventoryBridge] ProtocolLib dependency found.
+[12:39:20] [Server thread/INFO]: [MysqlInventoryBridge] Data save task is enabled.
+[12:39:20] [Server thread/INFO]: [MysqlInventoryBridge] Connecting to the database...
+[12:39:20] [Server thread/ERROR]: [STDERR] [com.mysql.jdbc.Driver] Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+[12:39:21] [Server thread/INFO]: [MysqlInventoryBridge] Database connection successful!
+[12:39:21] [Server thread/INFO]: [MysqlInventoryBridge] MysqlInventoryBridge loaded successfully!
+[12:39:21] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[12:39:21] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[12:39:21] [Server thread/WARN]: Whilst this makes it possible to use BungeeCord, unless access to your server is properly restricted, it also opens up the ability for hackers to connect with any username they choose.
+[12:39:21] [Server thread/WARN]: Please see http://www.spigotmc.org/wiki/firewall-guide/ for further information.
+[12:39:21] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[12:39:21] [Server thread/INFO]: Preparing level "world"
+[12:39:22] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[12:39:23] [Server thread/INFO]: Time elapsed: 916 ms
+[12:39:23] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[12:39:23] [Server thread/INFO]: Time elapsed: 276 ms
+[12:39:23] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[12:39:23] [Server thread/INFO]: Time elapsed: 249 ms
+[12:39:23] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.10.10
+[12:39:24] [Server thread/WARN]: [PlaceholderAPI] Loaded class com.viaversion.viaversion.api.type.Type from ViaVersion v4.0.1 which is not a depend, softdepend or loadbefore of this plugin.
+[12:39:25] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[12:39:25] [Server thread/INFO]: [PlugMan] Enabling PlugMan v2.1.7
+[12:39:25] [Server thread/INFO]: [NoMobGrief] Enabling NoMobGrief v1.0.0*
+[12:39:25] [Server thread/INFO]: [FarmProtect] Enabling FarmProtect v1.9.0*
+[12:39:27] [Thread-12/INFO]: [FarmProtect] About to download a new update: FarmProtect v1.9.0
+[12:39:27] [Thread-12/INFO]: [FarmProtect] Downloading update: 60% of 42920 bytes.
+[12:39:27] [Thread-12/INFO]: [FarmProtect] Downloading update: 70% of 42920 bytes.
+[12:39:27] [Thread-12/INFO]: [FarmProtect] Downloading update: 100% of 42920 bytes.
+[12:39:27] [Thread-12/INFO]: [FarmProtect] Finished updating.
+[12:39:27] [Server thread/INFO]: [FarmProtect] Version 1.9.0 by jacklin213 has been Enabled!
+[12:39:27] [Server thread/INFO]: [ChestSort] Enabling ChestSort v12.0.2
+[12:39:27] [Server thread/INFO]: [ChestSort] Use permissions: true
+[12:39:27] [Server thread/INFO]: [ChestSort] Current sorting method: {category},{itemsFirst},{name},{color},{customName}
+[12:39:27] [Server thread/INFO]: [ChestSort] Allow automatic chest sorting:true
+[12:39:27] [Server thread/INFO]: [ChestSort]   |- Chest sorting enabled by default: false
+[12:39:27] [Server thread/INFO]: [ChestSort]   |- Sort time: close
+[12:39:27] [Server thread/INFO]: [ChestSort] Allow automatic inventory sorting:true
+[12:39:27] [Server thread/INFO]: [ChestSort]   |- Inventory sorting enabled by default: false
+[12:39:27] [Server thread/INFO]: [ChestSort] Auto generate category files: true
+[12:39:27] [Server thread/INFO]: [ChestSort] Allow hotkeys: true
+[12:39:27] [Server thread/INFO]: [ChestSort] Hotkeys enabled by default:
+[12:39:27] [Server thread/INFO]: [ChestSort]   |- Middle-Click: true
+[12:39:27] [Server thread/INFO]: [ChestSort]   |- Shift-Click: true
+[12:39:27] [Server thread/INFO]: [ChestSort]   |- Double-Click: true
+[12:39:27] [Server thread/INFO]: [ChestSort]   |- Shift-Right-Click: true
+[12:39:27] [Server thread/INFO]: [ChestSort] Allow additional hotkeys: true
+[12:39:27] [Server thread/INFO]: [ChestSort] Additional hotkeys enabled by default:
+[12:39:27] [Server thread/INFO]: [ChestSort]   |- Left-Click: false
+[12:39:27] [Server thread/INFO]: [ChestSort]   |- Right-Click: false
+[12:39:27] [Server thread/INFO]: [ChestSort] Check for updates: true
+[12:39:27] [Server thread/INFO]: [ChestSort] Check interval: 4 hours (4.0 seconds)
+[12:39:27] [Server thread/INFO]: [ChestSort] Categories: 900-weapons (6), 905-common-tools (4), 907-other-tools (6), 909-food (33), 910-valuables (47), 920-armor-and-arrows (9), 930-brewing (18), 950-redstone (23), 960-wood (60), 970-stone (38), 980-plants (50), 981-corals (1)
+[12:39:27] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: chestsort
+[12:39:27] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v4.0.1
+[12:39:27] [Server thread/INFO]: [LightAPI] Enabling LightAPI v3.5.2
+[12:39:27] [Server thread/INFO]: [LightAPI] Loading CraftBukkit implementation for Paper server v1_17_R1.
+[12:39:27] [Server thread/INFO]: [CoreProtect] Enabling CoreProtect v20.1
+[12:39:27] [Server thread/INFO]: [CoreProtect] CoreProtect has been successfully enabled! 
+[12:39:27] [Server thread/INFO]: [CoreProtect] Using SQLite for data storage.
+[12:39:27] [Server thread/INFO]: --------------------
+[12:39:27] [Server thread/INFO]: [CoreProtect] Enjoy CoreProtect? Join our Discord!
+[12:39:27] [Server thread/INFO]: [CoreProtect] Discord: www.coreprotect.net/discord/
+[12:39:27] [Server thread/INFO]: --------------------
+[12:39:27] [Server thread/INFO]: [LastLog] Enabling LastLog v1.2.0
+[12:39:27] [Server thread/INFO]: [PCGF_PluginLib] Enabling PCGF_PluginLib v1.0.33-SNAPSHOT-T20211006173713
+[12:39:28] [Server thread/INFO]: [PCGF_PluginLib] [32mConfig file successfully loaded.[0m
+[12:39:28] [Server thread/INFO]: [PCGF_PluginLib] [32mItem name language file successfully loaded. Language: english  Author: GeorgH93[0m
+[12:39:28] [Server thread/INFO]: [PCGF_PluginLib] Loading item translations ...
+[12:39:28] [Server thread/INFO]: [PCGF_PluginLib] Finished loading item translations for 828 items.
+[12:39:28] [Server thread/INFO]: [PCGF_PluginLib] [32mLanguage file successfully loaded. Language: english  Author: GeorgH93[0m
+[12:39:28] [Server thread/INFO]: [PCGF_PluginLib] [32m PCGF_PluginLib v1.0.33-SNAPSHOT-T20211006173713 has been enabled! [33m :) [0m
+[12:39:28] [Server thread/INFO]: [ClearLag] Enabling ClearLag v3.2.2
+[12:39:28] [Server thread/INFO]: [ClearLag] Using version-adapter: LatestVersionAdapter
+[12:39:28] [Server thread/INFO]: [ClearLag] Loading modules...
+[12:39:28] [Server thread/WARN]: [ClearLag] Clearlag failed to use the internal TPS tracker during initialization. Reverted to estimation... (net.minecraft.server.v1_17_R1.MinecraftServer)
+[12:39:28] [Server thread/INFO]: [ClearLag] Modules enabed, loading config values
+[12:39:28] [Server thread/INFO]: [ClearLag] Modules have been loaded!
+[12:39:28] [Server thread/INFO]: [ClearLag] Clearlag is now enabled!
+[12:39:28] [Server thread/INFO]: [ConditionalEvents] Enabling ConditionalEvents v3.11.1
+[12:39:28] [Thread-16/INFO]: [ClearLag] Checking for updates compatible with your bukkit version [1.17]...
+[12:39:28] [Server thread/INFO]: [ConditionalEvents] Has been enabled! Version: 3.11.1
+[12:39:28] [Server thread/INFO]: [ConditionalEvents] Thanks for using my plugin!  ~Ajneb97
+[12:39:28] [Thread-16/INFO]: [ClearLag] No updates found!
+[12:39:28] [Server thread/INFO]: There is a new version available. (3.11.2)
+[12:39:28] [Server thread/INFO]: You can download it at: https://www.spigotmc.org/resources/82271/
+[12:39:28] [Server thread/INFO]: [ChestCleaner] Enabling ChestCleaner v2.3.2
+[12:39:29] [Server thread/WARN]: [ChestCleaner] Could not save ChestCleaner_2-3-2_en_GB.properties to plugins\ChestCleaner\ChestCleaner_2-3-2_en_GB.properties because ChestCleaner_2-3-2_en_GB.properties already exists.
+[12:39:29] [Server thread/WARN]: [ChestCleaner] Could not save ChestCleaner_2-3-2_de_DE.properties to plugins\ChestCleaner\ChestCleaner_2-3-2_de_DE.properties because ChestCleaner_2-3-2_de_DE.properties already exists.
+[12:39:29] [Server thread/INFO]: [lJumpPads] Enabling lJumpPads v1.0
+[12:39:29] [Server thread/INFO]: [lJumpPads] Plugin has been enabled!
+[12:39:29] [Server thread/INFO]: [BedRegen] Enabling BedRegen v1.1.0
+[12:39:29] [Server thread/INFO]: [BedRegen] BedRegen v1.1.0 Enabled!
+[12:39:29] [Server thread/INFO]: [Wailat] Enabling Wailat v1.0.5
+[12:39:29] [Server thread/INFO]: [UltimateKits] Enabling UltimateKits v0.1
+[12:39:29] [Server thread/INFO]: -----------------------
+[12:39:29] [Server thread/INFO]: Ultimate Kits 0.1 by toto7735
+[12:39:29] [Server thread/INFO]: Been Enabled!
+[12:39:29] [Server thread/INFO]: -----------------------
+[12:39:29] [Server thread/WARN]: [UltimateKits] Could not save config.yml to plugins\UltimateKits\config.yml because config.yml already exists.
+[12:39:29] [Server thread/INFO]: [HolographicDisplays] Enabling HolographicDisplays v2.4.9
+[12:39:29] [Server thread/INFO]: [HolographicDisplays] Enabled player relative placeholders with ProtocolLib.
+[12:39:29] [Server thread/INFO]: [AuctionHouse] Enabling AuctionHouse v3.0.2
+[12:39:29] [Server thread/INFO]: [AuctionHouse] Found locale file en_us.json
+[12:39:29] [Server thread/WARN]: [AuctionHouse] [1;33mA backup of the database has been saved with .backup extension.[0m
+[12:39:29] [Server thread/INFO]: [AuctionHouse] Using NMS version v1_17_R1
+[12:39:29] [Server thread/INFO]: [AuctionHouse] Using en_us locale
+[12:39:29] [Server thread/INFO]: [AuctionHouse] Loaded 0 listings
+[12:39:29] [Server thread/INFO]: [dynmap] Enabling dynmap v3.2.1-531
+[12:39:30] [Server thread/INFO]: [dynmap] Added 2 custom biome mappings
+[12:39:30] [Server thread/INFO]: [dynmap] Using LuckPerms 5.3.47 for access control
+[12:39:30] [Server thread/INFO]: [dynmap] Opening MySQL database localhost:3306/mysql80 as map store
+[12:39:30] [Server thread/INFO]: [dynmap] Mod Support processing completed
+[12:39:31] [Server thread/INFO]: [dynmap] Loaded 25 shaders.
+[12:39:32] [Server thread/INFO]: [dynmap] Loaded 82 perspectives.
+[12:39:32] [Server thread/INFO]: [dynmap] Loaded 22 lightings.
+[12:39:32] [Server thread/INFO]: [dynmap] Starting enter/exit processing
+[12:39:32] [Dynmap Render Thread/INFO]: [dynmap] Finish marker initialization
+[12:39:33] [Server thread/INFO]: [dynmap] Web server started on address 0.0.0.0:8124
+[12:39:33] [Server thread/INFO]: [dynmap] version 3.2.1-531 is enabled - core version 3.2.1-531
+[12:39:33] [Server thread/INFO]: [dynmap] For support, visit https://reddit.com/r/Dynmap or our Discord at https://discord.gg/s3rd5qn
+[12:39:33] [Server thread/INFO]: [dynmap] To report or track bugs, visit https://github.com/webbukkit/dynmap/issues
+[12:39:33] [Server thread/INFO]: [dynmap] If you'd like to donate, please visit https://www.patreon.com/dynmap or https://ko-fi.com/michaelprimm
+[12:39:33] [Server thread/INFO]: [dynmap] Loaded 3 maps of world 'world'.
+[12:39:33] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_nether'.
+[12:39:33] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_the_end'.
+[12:39:33] [Server thread/INFO]: [dynmap] Enabled
+[12:39:33] [Server thread/INFO]: [Essentials] Enabling Essentials v2.19.0
+[12:39:33] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[12:39:33] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[12:39:34] [Server thread/INFO]: [Essentials] Loaded 36837 items from items.json.
+[12:39:34] [Server thread/INFO]: [Essentials] Using locale en_US
+[12:39:34] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[12:39:34] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[12:39:34] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
+[12:39:34] [Server thread/INFO]: [Essentials] Using Vault based permissions (LuckPerms)
+[12:39:34] [Server thread/INFO]: [VeinMiner] Enabling VeinMiner v1.17.9
+[12:39:34] [Server thread/WARN]: [VeinMiner] Failed to reflectively access NMS class. Assuming legacy version.
+[12:39:34] [Server thread/INFO]: [VeinMiner] Registering events
+[12:39:34] [Server thread/INFO]: [VeinMiner] Registering commands
+[12:39:34] [Server thread/INFO]: [VeinMiner] Vault found. Attempting to enable economy support...
+[12:39:34] [Server thread/INFO]: [VeinMiner] Economy found! Hooked successfully.
+[12:39:34] [Server thread/INFO]: [VeinMiner] Enabling Plugin Metrics
+[12:39:34] [Server thread/INFO]: [VeinMiner] Thanks for enabling Metrics! The anonymous stats are appreciated
+[12:39:34] [Server thread/INFO]: [VeinMiner] Loading configuration options to local memory
+[12:39:35] [Server thread/INFO]: [VeinMiner] Performing an update check!
+[12:39:35] [Server thread/INFO]: [EvenMoreFish] Enabling EvenMoreFish v1.4.0.10
+[12:39:35] [Server thread/INFO]: [EvenMoreFish] [STDOUT] sss:4
+[12:39:35] [Server thread/WARN]: Nag author(s): '[Oheers]' of 'EvenMoreFish' about their usage of System.out/err.print. Please use your plugin's logger instead (JavaPlugin#getLogger).
+[12:39:35] [Server thread/INFO]: [EvenMoreFish] [STDOUT] checkign rarity: Common
+[12:39:35] [Server thread/INFO]: [EvenMoreFish] [STDOUT] checkign rarity: Epic
+[12:39:35] [Server thread/INFO]: [EvenMoreFish] [STDOUT] adding the rarity
+[12:39:35] [Server thread/INFO]: [EvenMoreFish] [STDOUT] checkign rarity: Legendary
+[12:39:35] [Server thread/INFO]: [EvenMoreFish] [STDOUT] adding the rarity
+[12:39:35] [Server thread/INFO]: [EvenMoreFish] [STDOUT] checkign rarity: Uncommon
+[12:39:35] [Server thread/INFO]: [EvenMoreFish] [STDOUT] adding the rarity
+[12:39:35] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: emf
+[12:39:35] [Server thread/INFO]: EvenMoreFish by Oheers : Enabled
+[12:39:35] [Server thread/INFO]: [Citizens] Enabling Citizens v2.0.28-SNAPSHOT (build 2395)
+[12:39:35] [ForkJoinPool.commonPool-worker-51/INFO]: [VeinMiner] Your version of VeinMiner (1.17.9) is up to date!
+[12:39:35] [Server thread/INFO]: [DeluxeMenus] Enabling DeluxeMenus v1.13.3-Release
+[12:39:35] [Server thread/INFO]: [DeluxeMenus] Hooked into PlaceholderAPI!
+[12:39:35] [Server thread/INFO]: [DeluxeMenus] 3 GUI menus loaded!
+[12:39:35] [Server thread/INFO]: [DeluxeMenus] You are running the latest version of DeluxeMenus!
+[12:39:35] [Server thread/INFO]: [DeluxeMenus] Successfully hooked into Vault for economy requirement!
+[12:39:35] [Server thread/INFO]: [DeluxeMenus] Could not setup a NMS hook for your server version!
+[12:39:35] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: deluxemenus
+[12:39:35] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat v2.19.0
+[12:39:35] [Server thread/INFO]: [EssentialsChat] Starting Metrics. Opt-out using the global bStats config.
+[12:39:35] [Server thread/INFO]: [StackMob] Enabling StackMob v5.7.1
+[12:39:35] [Server thread/INFO]: [StackMob] StackMob v5.7.1 by antiPerson and contributors.
+[12:39:35] [Server thread/INFO]: [StackMob] GitHub: https://github.com/Nathat23/StackMob-5 Discord: https://discord.gg/fz9xzuB
+[12:39:35] [Server thread/INFO]: [StackMob] Loading config files...
+[12:39:35] [Server thread/INFO]: [StackMob] Registering hooks and trait checks...
+[12:39:35] [Server thread/INFO]: [StackMob] Registering events, commands and tasks...
+[12:39:35] [Server thread/INFO]: [Chunky] Enabling Chunky v1.2.86
+[12:39:36] [Server thread/INFO]: [EssentialsProtect] Enabling EssentialsProtect v2.19.0
+[12:39:36] [Server thread/INFO]: [EssentialsProtect] Continuing to enable Protect.
+[12:39:36] [ForkJoinPool.commonPool-worker-51/INFO]: [StackMob] No update is currently available.
+[12:39:36] [Server thread/INFO]: [EssentialsProtect] Starting Metrics. Opt-out using the global bStats config.
+[12:39:36] [Server thread/INFO]: [EssentialsGeoIP] Enabling EssentialsGeoIP v2.19.0
+[12:39:36] [Server thread/ERROR]: [EssentialsGeoIP] No license key found! Please visit https://essentialsx.net/geoip for first time setup instructions.
+[12:39:36] [Server thread/ERROR]: [EssentialsGeoIP] Failed to read GeoIP database!
+java.io.FileNotFoundException: plugins\EssentialsGeoIP\GeoIP2-Country.mmdb (The system cannot find the file specified)
+	at java.io.RandomAccessFile.open0(Native Method) ~[?:?]
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:343) ~[?:?]
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:258) ~[?:?]
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:213) ~[?:?]
+	at com.earth2me.essentials.geoip.libs.maxmind.db.BufferHolder.<init>(BufferHolder.java:19) ~[EssentialsXGeoIP-2.19.0.jar:?]
+	at com.earth2me.essentials.geoip.libs.maxmind.db.Reader.<init>(Reader.java:116) ~[EssentialsXGeoIP-2.19.0.jar:?]
+	at com.earth2me.essentials.geoip.libs.maxmind.geoip2.DatabaseReader.<init>(DatabaseReader.java:66) ~[EssentialsXGeoIP-2.19.0.jar:?]
+	at com.earth2me.essentials.geoip.libs.maxmind.geoip2.DatabaseReader.<init>(DatabaseReader.java:54) ~[EssentialsXGeoIP-2.19.0.jar:?]
+	at com.earth2me.essentials.geoip.libs.maxmind.geoip2.DatabaseReader$Builder.build(DatabaseReader.java:160) ~[EssentialsXGeoIP-2.19.0.jar:?]
+	at com.earth2me.essentials.geoip.EssentialsGeoIPPlayerListener.reloadConfig(EssentialsGeoIPPlayerListener.java:175) ~[EssentialsXGeoIP-2.19.0.jar:?]
+	at com.earth2me.essentials.geoip.EssentialsGeoIPPlayerListener.<init>(EssentialsGeoIPPlayerListener.java:51) ~[EssentialsXGeoIP-2.19.0.jar:?]
+	at com.earth2me.essentials.geoip.EssentialsGeoIP.onEnable(EssentialsGeoIP.java:31) ~[EssentialsXGeoIP-2.19.0.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264) ~[patched_1.17.1.jar:git-Paper-327]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:370) ~[patched_1.17.1.jar:git-Paper-327]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:502) ~[patched_1.17.1.jar:git-Paper-327]
+	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.enablePlugin(CraftServer.java:544) ~[patched_1.17.1.jar:git-Paper-327]
+	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.enablePlugins(CraftServer.java:458) ~[patched_1.17.1.jar:git-Paper-327]
+	at net.minecraft.server.MinecraftServer.loadWorld(MinecraftServer.java:725) ~[patched_1.17.1.jar:git-Paper-327]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:317) ~[patched_1.17.1.jar:git-Paper-327]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1212) ~[patched_1.17.1.jar:git-Paper-327]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[patched_1.17.1.jar:git-Paper-327]
+	at java.lang.Thread.run(Thread.java:831) ~[?:?]
+[12:39:36] [Server thread/INFO]: [EssentialsGeoIP] This product includes GeoLite2 data created by MaxMind, available from http://www.maxmind.com/.
+[12:39:36] [Server thread/INFO]: [EssentialsGeoIP] Starting Metrics. Opt-out using the global bStats config.
+[12:39:36] [Server thread/INFO]: [CitizensGUI] Enabling CitizensGUI v1.11
+[12:39:36] [Server thread/INFO]: [EssentialsSpawn] Enabling EssentialsSpawn v2.19.0
+[12:39:36] [Server thread/INFO]: [EssentialsSpawn] Starting Metrics. Opt-out using the global bStats config.
+[12:39:36] [Server thread/INFO]: [EssentialsDiscord] Enabling EssentialsDiscord v2.19.0
+[12:39:36] [Server thread/INFO]: [EssentialsDiscord] Starting Metrics. Opt-out using the global bStats config.
+[12:39:36] [Server thread/INFO]: [EssentialsDiscord] Attempting to login to Discord...
+[12:39:37] [Server thread/INFO]: [net.essentialsx.dep.net.dv8tion.jda.api.JDA] Login Successful!
+[12:39:37] [JDA MainWS-ReadThread/INFO]: [net.essentialsx.dep.net.dv8tion.jda.internal.requests.WebSocketClient] Connected to WebSocket
+[12:39:37] [JDA MainWS-ReadThread/INFO]: [net.essentialsx.dep.net.dv8tion.jda.api.JDA] Finished Loading!
+[12:39:37] [Server thread/INFO]: [EssentialsDiscord] Successfully logged in as Minecraft SVR#5940
+[12:39:37] [Server thread/INFO]: [ServerNPC] Enabling ServerNPC v1.0.9*
+[12:39:37] [Server thread/INFO]: ServerNPC Loading ServerNPC... v1.0.9
+[12:39:37] [Server thread/INFO]: ServerNPC Enabled ServerNPC v1.0.9
+[12:39:37] [Server thread/INFO]: [IridiumSkyblock] Enabling IridiumSkyblock v3.1.2
+[12:39:38] [Server thread/INFO]: Preparing start region for dimension minecraft:iridiumskyblock
+[12:39:39] [Server thread/INFO]: Preparing spawn area: 0%
+[12:39:39] [Server thread/INFO]: Preparing spawn area: 0%
+[12:39:39] [Server thread/INFO]: Preparing spawn area: 0%
+[12:39:39] [Server thread/INFO]: Preparing spawn area: 0%
+[12:39:40] [Server thread/INFO]: Preparing spawn area: 0%
+[12:39:40] [Server thread/INFO]: Preparing spawn area: 0%
+[12:39:41] [Server thread/INFO]: Preparing spawn area: 0%
+[12:39:41] [Server thread/INFO]: Time elapsed: 3034 ms
+[12:39:41] [Server thread/INFO]: [dynmap] Loaded 3 maps of world 'IridiumSkyblock'.
+[12:39:41] [Server thread/INFO]: Preparing start region for dimension minecraft:iridiumskyblock_nether
+[12:39:41] [Server thread/INFO]: Preparing spawn area: 0%
+[12:39:41] [Server thread/INFO]: Time elapsed: 206 ms
+[12:39:41] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'IridiumSkyblock_nether'.
+[12:39:41] [Server thread/INFO]: Preparing start region for dimension minecraft:iridiumskyblock_the_end
+[12:39:41] [Server thread/INFO]: Preparing spawn area: 0%
+[12:39:41] [Server thread/INFO]: Preparing spawn area: 0%
+[12:39:42] [Server thread/INFO]: Time elapsed: 577 ms
+[12:39:42] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'IridiumSkyblock_the_end'.
+[12:39:42] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: iridiumskyblock
+[12:39:42] [Server thread/INFO]: [IridiumSkyblock] Successfully registered 617 placeholders with PlaceholderAPI.
+[12:39:42] [Server thread/INFO]: [IridiumSkyblock] ----------------------------------------
+[12:39:42] [Server thread/INFO]: [IridiumSkyblock] 
+[12:39:42] [Server thread/INFO]: [IridiumSkyblock] IridiumSkyblock Enabled!
+[12:39:42] [Server thread/INFO]: [IridiumSkyblock] Version: 3.1.2
+[12:39:42] [Server thread/INFO]: [IridiumSkyblock] 
+[12:39:42] [Server thread/INFO]: [IridiumSkyblock] ----------------------------------------
+[12:39:42] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v4.3.1-b861
+[12:39:42] [Server thread/WARN]: [Multiverse-Core] "Multiverse-Core v4.3.1-b861" has registered a listener for org.bukkit.event.entity.EntityCreatePortalEvent on method "public void com.onarandombox.MultiverseCore.listeners.MVPortalListener.entityPortalCreate(org.bukkit.event.entity.EntityCreatePortalEvent)", but the event is Deprecated. "Server performance will be affected"; please notify the authors [dumptruckman, Rigby, fernferret, lithium3141, main--].
+[12:39:42] [Server thread/INFO]: [Multiverse-Core] We are aware of the warning about the deprecated event. There is no alternative that allows us to do what we need to do and performance impact is negligible. It is safe to ignore.
+[12:39:43] [Server thread/INFO]: [Multiverse-Core] 6 - World(s) loaded.
+[12:39:43] [Server thread/WARN]: [Multiverse-Core] Buscript failed to load! The script command will be disabled! If you would like not to see this message, use `/mv conf enablebuscript false` to disable Buscript from loading.
+[12:39:43] [Server thread/INFO]: [Multiverse-Core] Version 4.3.1-b861 (API v24) Enabled - By dumptruckman, Rigby, fernferret, lithium3141 and main--
+[12:39:43] [Server thread/INFO]: [IPortal] Enabling IPortal v1.13
+[12:39:43] [Server thread/ERROR]: POI data mismatch: never registered at BlockPosition{x=-1, y=85, z=5}
+[12:39:43] [Server thread/ERROR]: POI data mismatch: never registered at BlockPosition{x=-2, y=85, z=5}
+[12:39:43] [Server thread/ERROR]: POI data mismatch: never registered at BlockPosition{x=-2, y=84, z=5}
+[12:39:43] [Server thread/ERROR]: POI data mismatch: never registered at BlockPosition{x=-1, y=84, z=5}
+[12:39:43] [Server thread/ERROR]: POI data mismatch: never registered at BlockPosition{x=-1, y=83, z=5}
+[12:39:43] [Server thread/ERROR]: POI data mismatch: never registered at BlockPosition{x=-2, y=83, z=5}
+[12:39:43] [Server thread/INFO]: [iPortal] lobby portal successfully Loaded!
+[12:39:43] [Server thread/INFO]: [iPortal] portals.yml file successfully Loaded!
+[12:39:43] [Server thread/INFO]: [iPortal] IPortal has been enabled!
+[12:39:43] [Server thread/INFO]: [GriefPrevention] Enabling GriefPrevention v16.17.1-2b69191
+[12:39:43] [Server thread/INFO]: [GriefPrevention] Finished loading configuration.
+[12:39:43] [Server thread/INFO]: [GriefPrevention] 0 total claims loaded.
+[12:39:44] [Server thread/INFO]: [GriefPrevention] Customizable messages loaded.
+[12:39:44] [Server thread/INFO]: [GriefPrevention] Finished loading data (File Mode).
+[12:39:44] [Server thread/INFO]: [GriefPrevention] Boot finished.
+[12:39:44] [Server thread/INFO]: [Multiverse-Inventories] Enabling Multiverse-Inventories v4.2.2-b500
+[12:39:44] [Server thread/INFO]: [Multiverse-Inventories 4.2.2-b500] enabled.
+[12:39:44] [Server thread/INFO]: [ProtectionLib] Enabling ProtectionLib v1.4
+[12:39:44] [Server thread/INFO]: [ProtectionLib] ProtectionLib-Module: LocalLibary hooked!
+[12:39:44] [Server thread/INFO]: [ProtectionLib] ProtectionLib-Module: PlotSquaredV3Module hooked!
+[12:39:44] [Server thread/INFO]: [ProtectionLib] ProtectionLib-Module: PlotSquaredV4Module hooked!
+[12:39:44] [Server thread/INFO]: [ProtectionLib] ProtectionLib-Module: PlotSquaredV5Module hooked!
+[12:39:44] [Server thread/INFO]: [ProtectionLib] ProtectionLib-Module: PlotSquaredV6Module hooked!
+[12:39:44] [Server thread/INFO]: Protection lib hook into: GriefPrevention 16.17.1-2b69191
+[12:39:44] [Server thread/INFO]: Protection lib hook into: IridiumSkyblock 3.1.2
+[12:39:44] [Server thread/INFO]: [SmoothTimber] Enabling SmoothTimber v1.17.8
+[12:39:44] [Server thread/INFO]: SmoothTimber || You're currently using the supported Minecraft Version 1.17.1 (Core v1_16x)
+[12:39:44] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: smoothtimber
+[12:39:44] [Server thread/INFO]: [FurnitureLib] Enabling FurnitureLib v2.5.4.1
+[12:39:45] [Server thread/INFO]: ==========================================
+[12:39:45] [Server thread/INFO]: FurnitureLibrary Version: 2.5.4.1
+[12:39:45] [Server thread/INFO]: Furniture Author: Ste3et_C0st
+[12:39:45] [Server thread/INFO]: Furniture Website: https://dicecraft.de/furniture/
+[12:39:45] [Server thread/INFO]: FurnitureLib load for Minecraft: 1.17
+[12:39:45] [Server thread/INFO]: Furniture start load
+[12:39:45] [Server thread/INFO]: Furniture find ProtectionLib: true
+[12:39:45] [Server thread/INFO]: [de.Ste3et_C0st.FurnitureLib.Database.com.zaxxer.hikari.HikariDataSource] FurnitureLib - Starting...
+[12:39:45] [Server thread/INFO]: [de.Ste3et_C0st.FurnitureLib.Database.com.zaxxer.hikari.HikariDataSource] FurnitureLib - Start completed.
+[12:39:45] [Server thread/INFO]: [FurnitureLib] FurnitureLib Started SQLite database. Took 69ms
+[12:39:45] [Server thread/INFO]: [FurnitureLib] FurnitureLib try to load models for world (world)
+[12:39:45] [Server thread/INFO]: [FurnitureLib] No Models are found in world: world
+[12:39:45] [Server thread/INFO]: [FurnitureLib] FurnitureLib try to load models for world (world_nether)
+[12:39:45] [Server thread/INFO]: [FurnitureLib] No Models are found in world: world_nether
+[12:39:45] [Server thread/INFO]: [FurnitureLib] FurnitureLib try to load models for world (world_the_end)
+[12:39:45] [Server thread/INFO]: [FurnitureLib] No Models are found in world: world_the_end
+[12:39:45] [Server thread/INFO]: [FurnitureLib] FurnitureLib try to load models for world (IridiumSkyblock)
+[12:39:45] [Server thread/INFO]: [FurnitureLib] No Models are found in world: IridiumSkyblock
+[12:39:45] [Server thread/INFO]: [FurnitureLib] FurnitureLib try to load models for world (IridiumSkyblock_nether)
+[12:39:45] [Server thread/INFO]: [FurnitureLib] No Models are found in world: IridiumSkyblock_nether
+[12:39:45] [Server thread/INFO]: [FurnitureLib] FurnitureLib try to load models for world (IridiumSkyblock_the_end)
+[12:39:45] [Server thread/INFO]: [FurnitureLib] No Models are found in world: IridiumSkyblock_the_end
+[12:39:48] [Server thread/INFO]: [FurnitureLib] FurnitureLib Load 42 model schematics into Ram. Took 2953ms
+[12:39:48] [Server thread/INFO]: Furniture load finish :)
+[12:39:48] [Server thread/INFO]: ==========================================
+[12:39:48] [Server thread/INFO]: [DiceFurniture] Enabling DiceFurniture v3.5.0
+[12:39:53] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[12:39:53] [Server thread/INFO]: No expansions were registered!
+[12:39:53] [Server thread/INFO]: Running delayed init tasks
+[12:39:53] [Craft Scheduler Thread - 9 - Essentials/INFO]: [Essentials] Fetching version information...
+[12:39:53] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.17.1 (756)
+[12:39:53] [Server thread/WARN]: [ViaVersion] ViaVersion does not have any compatible versions for this server version!
+[12:39:53] [Server thread/WARN]: [ViaVersion] Please remember that ViaVersion only adds support for versions newer than the server version.
+[12:39:53] [Server thread/WARN]: [ViaVersion] If you need support for older versions you may need to use one or more ViaVersion addons too.
+[12:39:53] [Server thread/WARN]: [ViaVersion] In that case please read the ViaVersion resource page carefully or use https://jo0001.github.io/ViaSetup
+[12:39:53] [Server thread/WARN]: [ViaVersion] and if you're still unsure, feel free to join our Discord-Server for further assistance.
+[12:39:53] [Server thread/INFO]: [AuctionHouse] Registered Service Provider Essentials for Vault's Economy API
+[12:39:53] [Server thread/INFO]: [AuctionHouse] Registered Service Provider LuckPerms for Vault's Chat API
+[12:39:53] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
+[12:39:53] [Server thread/INFO]: [Citizens] Loaded 0 NPCs.
+[12:39:53] [Server thread/INFO]: Multiverse already knows about 'IridiumSkyblock'!
+[12:39:53] [Server thread/INFO]: Success! Property generator was set to IridiumSkyblock
+[12:39:53] [Server thread/INFO]: Multiverse already knows about 'IridiumSkyblock_nether'!
+[12:39:53] [Server thread/INFO]: Success! Property generator was set to IridiumSkyblock
+[12:39:53] [Server thread/INFO]: Multiverse already knows about 'IridiumSkyblock_the_end'!
+[12:39:53] [Server thread/INFO]: Success! Property generator was set to IridiumSkyblock
+[12:39:53] [Server thread/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor!
+[12:39:53] [Server thread/INFO]: [AuctionHouse] Found PlaceholderAPI plugin
+[12:39:53] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: auctionhouse
+[12:39:53] [Server thread/INFO]: [AuctionHouse] Registered PlaceholderAPI placeholders
+[12:39:54] [Server thread/WARN]: [IridiumSkyblock] ********************************************************
+[12:39:54] [Server thread/WARN]: [IridiumSkyblock] * There is a new version of IridiumSkyblock available!
+[12:39:54] [Server thread/WARN]: [IridiumSkyblock] *  
+[12:39:54] [Server thread/WARN]: [IridiumSkyblock] * Your version:   3.1.2
+[12:39:54] [Server thread/WARN]: [IridiumSkyblock] * Latest version: 3.1.6
+[12:39:54] [Server thread/WARN]: [IridiumSkyblock] *  
+[12:39:54] [Server thread/WARN]: [IridiumSkyblock] * Please update to the newest version.
+[12:39:54] [Server thread/WARN]: [IridiumSkyblock] *  
+[12:39:54] [Server thread/WARN]: [IridiumSkyblock] * Download:
+[12:39:54] [Server thread/WARN]: [IridiumSkyblock] *   https://www.spigotmc.org/resources/62480
+[12:39:54] [Server thread/WARN]: [IridiumSkyblock] ********************************************************
+[12:39:54] [Server thread/WARN]: [ChestSort] **************************************************
+[12:39:54] [Server thread/WARN]: [ChestSort] * There is a new version of ChestSort available!
+[12:39:54] [Server thread/WARN]: [ChestSort] *  
+[12:39:54] [Server thread/WARN]: [ChestSort] * Your version:   12.0.2
+[12:39:54] [Server thread/WARN]: [ChestSort] * Latest version: 12.0.4
+[12:39:54] [Server thread/WARN]: [ChestSort] *  
+[12:39:54] [Server thread/WARN]: [ChestSort] * Please update to the newest version.
+[12:39:54] [Server thread/WARN]: [ChestSort] *  
+[12:39:54] [Server thread/WARN]: [ChestSort] * Download:
+[12:39:54] [Server thread/WARN]: [ChestSort] *   https://www.chestsort.de
+[12:39:54] [Server thread/WARN]: [ChestSort] **************************************************
+[12:39:54] [Server thread/INFO]: Done (66.096s)! For help, type "help"
+[12:39:54] [Server thread/INFO]: Timings Reset
+[12:39:54] [Craft Scheduler Thread - 5 - Vault/INFO]: [Vault] Checking for Updates ... 
+[12:39:54] [Craft Scheduler Thread - 9 - ChestCleaner/INFO]: [ChestCleaner] A new update is available at: https://www.spigotmc.org/resources/40313/updates .
+[12:39:54] [Craft Scheduler Thread - 5 - Vault/INFO]: [Vault] No new version available
+[12:39:57] [Server thread/INFO]: -------< LightAPI-fork 3.5.2 >-------
+[12:39:57] [Server thread/INFO]: You are running the latest version!
+[12:39:57] [Server thread/INFO]: [lJumpPads] Jumppads has been loaded!
